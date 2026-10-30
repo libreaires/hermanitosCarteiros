@@ -13,7 +13,6 @@
 [ext_resource type="StyleBox" uid="uid://dxfce4bjiik0l" path="res://Assets/Botao/button_hover_red.tres" id="10_8xdbm"]
 
 [node name="TelaFinal" type="Control" unique_id=349717936 node_paths=PackedStringArray("subText")]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,7 +23,7 @@ script = ExtResource("1_tela")
 subText = NodePath("Caixa/Subtitulo")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=228423942]
-modulate = Color(1, 1, 1, 0.22745098)
+modulate = Color(1, 1, 1, 0.69803923)
 position = Vector2(0, 51)
 texture = ExtResource("7_l3bg0")
 
@@ -45,6 +44,8 @@ theme_override_constants/separation = 16
 
 [node name="Titulo" type="Label" parent="Caixa" unique_id=805157417]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("2_ubyka")
 theme_override_font_sizes/font_size = 24
 text = "VOCÊ PERDEU!"
@@ -52,6 +53,7 @@ horizontal_alignment = 1
 
 [node name="Subtitulo" type="Label" parent="Caixa" unique_id=38167392]
 layout_mode = 2
+theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("3_mqopb")
 theme_override_font_sizes/font_size = 8
 text = "As encomendas não

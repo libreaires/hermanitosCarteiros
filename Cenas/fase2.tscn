@@ -121,8 +121,8 @@ script = ExtResource("2_5mjnw")
 [node name="Folhas" parent="Camera2D" unique_id=782141134 instance=ExtResource("3_2xlgh")]
 position = Vector2(106, -202)
 
-[node name="TelaFinal" parent="Camera2D" unique_id=349717936 instance=ExtResource("4_lq4xa")]
-visible = false
+[node name="TelaFinal" parent="Camera2D" unique_id=349717936 node_paths=PackedStringArray("ui") instance=ExtResource("4_lq4xa")]
+ui = NodePath("../../Text_box")
 
 [node name="Text_box" parent="." unique_id=1930448313 instance=ExtResource("14_lq4xa")]
 
