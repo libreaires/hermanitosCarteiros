@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dt5fjj1kwhltg"]
+
+[ext_resource type="Script" uid="uid://7p7dtxck87q4" path="res://Scripts/cipo.gd" id="1_cipo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_no"]
+size = Vector2(14, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_corda"]
+size = Vector2(8, 76)
+
+[node name="Cipo" type="Area2D" unique_id=67647446]
+collision_layer = 64
+collision_mask = 0
+script = ExtResource("1_cipo")
+
+[node name="Node" type="ColorRect" parent="." unique_id=645418747]
+offset_left = -3.0
+offset_top = -6.0
+offset_right = 3.0
+color = Color(0.24, 0.54, 0.17, 1)
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=146101443]
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_no")
+
+[node name="Linha" type="Line2D" parent="." unique_id=963986353]
+points = PackedVector2Array(0, 0, 0, 80)
+width = 3.0
+default_color = Color(0.24, 0.54, 0.17, 1)
+
+[node name="Corda" type="Area2D" parent="." unique_id=371943342]
+collision_layer = 0
+
+[node name="Collision" type="CollisionShape2D" parent="Corda" unique_id=86509815]
+position = Vector2(0, 42)
+shape = SubResource("RectangleShape2D_corda")
+
+[connection signal="body_entered" from="Corda" to="." method="_on_corda_body_entered"]
+[connection signal="body_exited" from="Corda" to="." method="_on_corda_body_exited"]

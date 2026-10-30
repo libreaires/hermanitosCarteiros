@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://xuy7n5n5p1ri"]
+
+[ext_resource type="Script" uid="uid://du8rrpnct7mvo" path="res://Scripts/passaro.gd" id="1_s"]
+[ext_resource type="Texture2D" uid="uid://chh3yrmq6r0pl" path="res://Assets/Sprites/passaro/passaro1.png" id="2_a"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a")
+}],
+"loop": true,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1"]
+radius = 6.0
+
+[node name="Passaro" type="Area2D" unique_id=294993520]
+collision_layer = 4
+script = ExtResource("1_s")
+velocidade = 400.0
+limite_esquerdo = -400.0
+limite_direito = 400.0
+h_speed = 55.0
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=650503508]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_1")
+animation = &"walk"
+autoplay = "walk"
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=612187540]
+shape = SubResource("CircleShape2D_1")
+
+[node name="Raycast" type="RayCast2D" parent="." unique_id=1960163103]
+enabled = false
+target_position = Vector2(0, 8)
+collision_mask = 18

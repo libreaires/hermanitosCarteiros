@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://hu1xbjvr1v51"]
+
+[ext_resource type="Script" uid="uid://bmdoarfkpceim" path="res://Scripts/telaFinal.gd" id="1_tela"]
+[ext_resource type="FontFile" uid="uid://de816ux7qepml" path="res://Assets/Fontes/Fortzilla_Font_1_14/OpenType (.otf)/Fortzilla-Regular.otf" id="2_acpag"]
+[ext_resource type="FontFile" uid="uid://c8dy550a1p8qb" path="res://Assets/Fontes/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="3_qtuxm"]
+[ext_resource type="StyleBox" uid="uid://8amph6mkbqle" path="res://Assets/Botao/vitoria_next_level_button.tres" id="4_6ltmy"]
+[ext_resource type="StyleBox" uid="uid://cekj71uevlp5" path="res://Assets/Botao/vitoria_menu_button.tres" id="5_d5mle"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1nba"]
+bg_color = Color(0, 0.13451844, 0.6, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o8ngc"]
+bg_color = Color(0.6, 0.1966369, 0.19216058, 1)
+
+[node name="TelaFinal" type="Control" unique_id=527188117 node_paths=PackedStringArray("subText")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tela")
+subText = NodePath("Caixa/Subtitulo")
+tipo = 1
+
+[node name="Caixa" type="VBoxContainer" parent="." unique_id=564655550]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -150.0
+offset_right = 300.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="Titulo" type="Label" parent="Caixa" unique_id=150266455]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_acpag")
+theme_override_font_sizes/font_size = 64
+text = "MISSÃO CONCLUÍDA!"
+horizontal_alignment = 1
+
+[node name="Subtitulo" type="Label" parent="Caixa" unique_id=1490166919]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_qtuxm")
+theme_override_font_sizes/font_size = 24
+text = "Todas as caixas foram entregues!"
+horizontal_alignment = 1
+
+[node name="Botoes" type="VBoxContainer" parent="." unique_id=882397771]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -186.0
+offset_top = 6.0
+offset_right = 186.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Jogar" type="Button" parent="Botoes" unique_id=2104306329]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_qtuxm")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("4_6ltmy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_c1nba")
+text = "PRÓXIMA FASE"
+
+[node name="Menu" type="Button" parent="Botoes" unique_id=2110214516]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_qtuxm")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("5_d5mle")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o8ngc")
+text = "MENU"
+
+[connection signal="pressed" from="Botoes/Jogar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="Botoes/Menu" to="." method="_on_menu_pressed"]

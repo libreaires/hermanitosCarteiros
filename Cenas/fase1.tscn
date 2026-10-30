@@ -1,0 +1,161 @@
+[gd_scene format=4 uid="uid://bpdaj3ry7l6wr"]
+
+[ext_resource type="Script" uid="uid://d0ankleuak386" path="res://Cenas/fase1.gd" id="1_urk3f"]
+[ext_resource type="Script" uid="uid://dpivp4cura6d1" path="res://Scripts/camera.gd" id="2_hm8q3"]
+[ext_resource type="Texture2D" uid="uid://deiahv3tto1t4" path="res://Assets/Sprites/mapa/fundo_fase.png" id="3_4r2p4"]
+[ext_resource type="PackedScene" uid="uid://br0kgm1m2ops5" path="res://Cenas/derrota.tscn" id="3_8ve6q"]
+[ext_resource type="TileSet" uid="uid://5hrwnyuqwqvs" path="res://Tiles/tileset_arvore.tres" id="4_h8lng"]
+[ext_resource type="PackedScene" uid="uid://dqtlwb8d7sgq" path="res://Cenas/player.tscn" id="5_8ve6q"]
+[ext_resource type="PackedScene" uid="uid://c8um0fjc1dq2a" path="res://Cenas/caixa.tscn" id="6_wfiab"]
+[ext_resource type="PackedScene" uid="uid://dt5fjj1kwhltg" path="res://Cenas/cipo.tscn" id="7_vhn7i"]
+[ext_resource type="PackedScene" uid="uid://05n7icykp8xb" path="res://Cenas/casa.tscn" id="8_urk3f"]
+[ext_resource type="FontFile" uid="uid://c8dy550a1p8qb" path="res://Assets/Fontes/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="8_vhn7i"]
+[ext_resource type="PackedScene" uid="uid://b5u3uflcushtf" path="res://Cenas/nina.tscn" id="9_hm8q3"]
+[ext_resource type="AudioStream" uid="uid://cjm22eipka6qg" path="res://Assets/Audio/Músicas/fase1.ogg" id="10_vhn7i"]
+[ext_resource type="PackedScene" uid="uid://b6si2o5o8x7tu" path="res://Cenas/besouro.tscn" id="11_h8lng"]
+[ext_resource type="PackedScene" uid="uid://c5rwnqag1nmno" path="res://Cenas/folhas.tscn" id="13_wfiab"]
+[ext_resource type="PackedScene" uid="uid://f2vi3atyhwav" path="res://Cenas/text_box.tscn" id="15_urk3f"]
+[ext_resource type="PackedScene" uid="uid://xuy7n5n5p1ri" path="res://Cenas/passaro.tscn" id="16_7rn71"]
+[ext_resource type="Texture2D" uid="uid://c56chsgx6y3dx" path="res://Assets/Sprites/mapa/placa.png" id="17_1i4ui"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7rn71"]
+size = Vector2(16, 3000)
+
+[node name="Fase1" type="Node" unique_id=2035482623 node_paths=PackedStringArray("label_entregas", "label_tempo", "timer", "telaDerrota", "dialogue")]
+script = ExtResource("1_urk3f")
+total_entregas = 2
+tempo_total = 200
+label_entregas = NodePath("HUD/Box/LabelEntregas")
+label_tempo = NodePath("HUD/Box/LabelTempo")
+timer = NodePath("Timer")
+telaDerrota = NodePath("Camera2D/TelaFinal")
+dialogue = NodePath("Text_box")
+
+[node name="Text_box" parent="." unique_id=1930448313 instance=ExtResource("15_urk3f")]
+layer = 0
+
+[node name="Fundo" type="Sprite2D" parent="." unique_id=438683814]
+z_index = -10
+position = Vector2(0, -852)
+scale = Vector2(4, 4)
+texture = ExtResource("3_4r2p4")
+
+[node name="Arvores" type="TileMapLayer" parent="." unique_id=296697361]
+z_index = -1
+tile_map_data = PackedByteArray("AAALAPT/AwAAAAAAAAAMAPT/AwAAAAAAAAALAPX/AwAAAAAAAAAMAPX/AwAAAAAAAAALAPb/AwAAAAAAAAAMAPb/AwAAAAAAAAALAPf/AwAAAAAAAAAMAPf/AwAAAAAAAAALAPj/AwAAAAAAAAAMAPj/AwAAAAAAAAALAPn/AwAAAAAAAAAMAPn/AwAAAAAAAAALAPr/AwAAAAAAAAAMAPr/AwAAAAAAAAALAPv/AwAAAAAAAAAMAPv/AwAAAAAAAAALAPz/AwAAAAAAAAAMAPz/AwAAAAAAAAALAP3/AwAAAAAAAAAMAP3/AwAAAAAAAAALAP7/AwAAAAAAAAAMAP7/AwAAAAAAAAALAP//AwAAAAAAAAAMAP//AwAAAAAAAAAIAPL/BAAAAAAAAAAJAPL/BAAAAAAAAAAKAPL/BAAAAAAAAAALAPL/BAAAAAAAAAAMAPL/BAAAAAAAAAAIAPP/BAAAAAAAAAAJAPP/BAAAAAAAAAAKAPP/BAAAAAAAAAALAPP/BAAAAAAAAAAMAPP/BAAAAAAAAAA=")
+tile_set = ExtResource("4_h8lng")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1955420641]
+tile_map_data = PackedByteArray("AADz/wAAAgAAAAAAAADz/wEAAAAAAAAAAADz/wIAAAAAAAAAAAD0/wAAAgAAAAAAAAD0/wEAAAAAAAAAAAD0/wIAAAAAAAAAAAD1/wAAAgAAAAAAAAD1/wEAAAAAAAAAAAD1/wIAAAAAAAAAAAD2/wAAAgAAAAAAAAD2/wEAAAAAAAAAAAD2/wIAAAAAAAAAAAD3/wAAAgAAAAAAAAD3/wEAAAAAAAAAAAD3/wIAAAAAAAAAAAD4/wAAAgAAAAAAAAD4/wEAAAAAAAAAAAD4/wIAAAAAAAAAAAD5/wAAAgAAAAAAAAD5/wEAAAAAAAAAAAD5/wIAAAAAAAAAAAD6/wAAAgAAAAAAAAD6/wEAAAAAAAAAAAD6/wIAAAAAAAAAAAD7/wAAAgAAAAAAAAD7/wEAAAAAAAAAAAD7/wIAAAAAAAAAAAD8/wAAAgAAAAAAAAD8/wEAAAAAAAAAAAD8/wIAAAAAAAAAAAD9/wAAAgAAAAAAAAD9/wEAAAAAAAAAAAD9/wIAAAAAAAAAAAD+/wAAAgAAAAAAAAD+/wEAAAAAAAAAAAD+/wIAAAAAAAAAAAD//wAAAgAAAAAAAAD//wEAAAAAAAAAAAD//wIAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAAAAgAAAAAAAAABAAEAAAAAAAAAAAABAAIAAAAAAAAAAAACAAAAAgAAAAAAAAACAAEAAAAAAAAAAAACAAIAAAAAAAAAAAADAAAAAgAAAAAAAAADAAEAAAAAAAAAAAADAAIAAAAAAAAAAAAEAAAAAgAAAAAAAAAEAAEAAAAAAAAAAAAEAAIAAAAAAAAAAAAFAAAAAgAAAAAAAAAFAAEAAAAAAAAAAAAFAAIAAAAAAAAAAAAGAAAAAgAAAAAAAAAGAAEAAAAAAAAAAAAGAAIAAAAAAAAAAAAHAAAAAgAAAAAAAAAHAAEAAAAAAAAAAAAHAAIAAAAAAAAAAAAIAAAAAgAAAAAAAAAIAAEAAAAAAAAAAAAIAAIAAAAAAAAAAAAJAAAAAgAAAAAAAAAJAAEAAAAAAAAAAAAJAAIAAAAAAAAAAAAKAAAAAgAAAAAAAAAKAAEAAAAAAAAAAAAKAAIAAAAAAAAAAAALAAAAAgAAAAAAAAALAAEAAAAAAAAAAAALAAIAAAAAAAAAAAAMAAAAAgAAAAAAAAAMAAEAAAAAAAAAAAAMAAIAAAAAAAAAAAD9//v/AQAAAAAAAAD+//v/AQAAAAAAAAD///v/AQAAAAAAAAAAAPv/AQAAAAAAAAABAPv/AQAAAAAAAAACAPv/AQAAAAAAAAADAPv/AQAAAAAAAAAEAPv/AQAAAAAAAAAFAPv/AQAAAAAAAAAGAPv/AQAAAAAAAAAHAPv/AQAAAAAAAAAIAPv/AQAAAAAAAAAJAPv/AQAAAAAAAAAKAPv/AQAAAAAAAAA=")
+tile_set = ExtResource("4_h8lng")
+
+[node name="Paredes" type="Node" parent="." unique_id=399492488]
+
+[node name="ParedeEsquerda" type="StaticBody2D" parent="Paredes" unique_id=1663772406]
+position = Vector2(-216, -1300)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paredes/ParedeEsquerda" unique_id=842723187]
+shape = SubResource("RectangleShape2D_7rn71")
+
+[node name="ParedeDireita" type="StaticBody2D" parent="Paredes" unique_id=678713707]
+position = Vector2(216, -1300)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paredes/ParedeDireita" unique_id=554906302]
+shape = SubResource("RectangleShape2D_7rn71")
+
+[node name="Pipo" parent="." unique_id=789689854 instance=ExtResource("5_8ve6q")]
+z_index = 1
+position = Vector2(-164, -21)
+debug = false
+jump_velocity = -370.0
+
+[node name="Caixas" type="Node" parent="." unique_id=858418405]
+
+[node name="Caixa1" parent="Caixas" unique_id=619229386 instance=ExtResource("6_wfiab")]
+position = Vector2(-67, -32)
+pesada = true
+
+[node name="Caixa2" parent="Caixas" unique_id=2046081679 instance=ExtResource("6_wfiab")]
+position = Vector2(17, -101)
+
+[node name="Cipo1" parent="." unique_id=1466314081 instance=ExtResource("7_vhn7i")]
+position = Vector2(-40, -80)
+
+[node name="Casas" type="Node" parent="." unique_id=931572828]
+
+[node name="Casa1" parent="Casas" unique_id=709916638 instance=ExtResource("8_urk3f")]
+position = Vector2(144, -76)
+
+[node name="Casa2" parent="Casas" unique_id=962531452 instance=ExtResource("8_urk3f")]
+position = Vector2(138, 4)
+
+[node name="Timer" type="Timer" parent="." unique_id=679299268]
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=425454922]
+
+[node name="Box" type="VBoxContainer" parent="HUD" unique_id=1604660494]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 254.0
+offset_bottom = 72.0
+theme_override_constants/separation = 10
+
+[node name="LabelEntregas" type="Label" parent="HUD/Box" unique_id=2082507337]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.96856916, 0.8694534, 1)
+theme_override_colors/font_outline_color = Color(0.13662755, 0.046283823, 0.06949178, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("8_vhn7i")
+theme_override_font_sizes/font_size = 24
+text = "Caixas: 0/1"
+
+[node name="LabelTempo" type="Label" parent="HUD/Box" unique_id=1635752838]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8939387, 0.586607, 1)
+theme_override_colors/font_outline_color = Color(0.13725491, 0.047058824, 0.07058824, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("8_vhn7i")
+theme_override_font_sizes/font_size = 24
+text = "Tempo: 300"
+
+[node name="Nina" parent="." unique_id=147742504 instance=ExtResource("9_hm8q3")]
+position = Vector2(-130, -19)
+debug = false
+
+[node name="Tema" type="AudioStreamPlayer" parent="." unique_id=607772130]
+stream = ExtResource("10_vhn7i")
+autoplay = true
+
+[node name="Besouro" parent="." unique_id=660291914 instance=ExtResource("11_h8lng")]
+position = Vector2(13, -9)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1110471990]
+z_index = 100
+position = Vector2(0, -8)
+zoom = Vector2(2.75, 2.75)
+limit_enabled = false
+limit_bottom = 48
+position_smoothing_enabled = true
+script = ExtResource("2_hm8q3")
+
+[node name="Folhas" parent="Camera2D" unique_id=782141134 instance=ExtResource("13_wfiab")]
+position = Vector2(84.00001, -195.00002)
+
+[node name="TelaFinal" parent="Camera2D" unique_id=349717936 node_paths=PackedStringArray("ui") instance=ExtResource("3_8ve6q")]
+process_mode = 2
+z_index = 100
+ui = NodePath("../../Text_box")
+
+[node name="Passaro" parent="." unique_id=294993520 instance=ExtResource("16_7rn71")]
+position = Vector2(-163, -119)
+
+[node name="Placa" type="Sprite2D" parent="." unique_id=458437160]
+position = Vector2(-12, -104)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("17_1i4ui")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
