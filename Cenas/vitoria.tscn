@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://hu1xbjvr1v51"]
 
 [ext_resource type="Script" uid="uid://bmdoarfkpceim" path="res://Scripts/telaFinal.gd" id="1_tela"]
-[ext_resource type="FontFile" uid="uid://de816ux7qepml" path="res://Assets/Fontes/Fortzilla_Font_1_14/OpenType (.otf)/Fortzilla-Regular.otf" id="2_acpag"]
-[ext_resource type="FontFile" uid="uid://c8dy550a1p8qb" path="res://Assets/Fontes/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="3_qtuxm"]
-[ext_resource type="StyleBox" uid="uid://8amph6mkbqle" path="res://Assets/Botao/vitoria_next_level_button.tres" id="4_6ltmy"]
-[ext_resource type="StyleBox" uid="uid://cekj71uevlp5" path="res://Assets/Botao/vitoria_menu_button.tres" id="5_d5mle"]
+[ext_resource type="FontFile" uid="uid://de816ux7qepml" path="res://Assets/Fontes/fortzilla/otf/Fortzilla-Regular.otf" id="2_acpag"]
+[ext_resource type="FontFile" uid="uid://c8dy550a1p8qb" path="res://Assets/Fontes/brackeys/fonts/PixelOperator8Bold.ttf" id="3_qtuxm"]
+[ext_resource type="StyleBox" uid="uid://8amph6mkbqle" path="res://Assets/Recursos/vitoria_next_level_button.tres" id="4_6ltmy"]
+[ext_resource type="StyleBox" uid="uid://cekj71uevlp5" path="res://Assets/Recursos/vitoria_menu_button.tres" id="5_d5mle"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1nba"]
 bg_color = Color(0, 0.13451844, 0.6, 1)

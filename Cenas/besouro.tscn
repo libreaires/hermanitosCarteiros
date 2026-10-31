@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://b6si2o5o8x7tu"]
 
-[ext_resource type="Texture2D" uid="uid://b70p0l51erytc" path="res://Assets/Sprites/besouro/besouro_amassado.png" id="1_11lup"]
+[ext_resource type="Texture2D" uid="uid://b70p0l51erytc" path="res://Assets/Sprites/inimigos/besouro/besouro_amassado.png" id="1_11lup"]
 [ext_resource type="Script" uid="uid://cxjj4agaolby1" path="res://Scripts/besouro.gd" id="1_jg8wq"]
-[ext_resource type="Texture2D" uid="uid://dtbgv5ebdr5ad" path="res://Assets/Sprites/besouro/besouro1.png" id="2_jg8wq"]
-[ext_resource type="Texture2D" uid="uid://b44147jqw42b2" path="res://Assets/Sprites/besouro/besouro2.png" id="3_w2rut"]
+[ext_resource type="Texture2D" uid="uid://dtbgv5ebdr5ad" path="res://Assets/Sprites/inimigos/besouro/besouro1.png" id="2_jg8wq"]
+[ext_resource type="Texture2D" uid="uid://b44147jqw42b2" path="res://Assets/Sprites/inimigos/besouro/besouro2.png" id="3_w2rut"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8y7kw"]
 animations = [{

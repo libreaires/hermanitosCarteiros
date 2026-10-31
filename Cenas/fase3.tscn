@@ -1,15 +1,15 @@
 [gd_scene format=4 uid="uid://ddwfpybeqbx2r"]
 
-[ext_resource type="Script" uid="uid://dtj2lf28a66pa" path="res://Scripts/main.gd" id="1_q73nq"]
+[ext_resource type="Script" uid="uid://dtj2lf28a66pa" path="res://Scripts/gameplay.gd" id="1_q73nq"]
 [ext_resource type="Script" uid="uid://dpivp4cura6d1" path="res://Scripts/camera.gd" id="2_18hf2"]
 [ext_resource type="Texture2D" uid="uid://deiahv3tto1t4" path="res://Assets/Sprites/mapa/fundo_fase.png" id="3_rrjvv"]
-[ext_resource type="TileSet" uid="uid://5hrwnyuqwqvs" path="res://Tiles/tileset_arvore.tres" id="4_wt1dh"]
+[ext_resource type="TileSet" uid="uid://5hrwnyuqwqvs" path="res://Tiles/tileset.tres" id="4_wt1dh"]
 [ext_resource type="PackedScene" uid="uid://dqtlwb8d7sgq" path="res://Cenas/player.tscn" id="5_s3rsy"]
 [ext_resource type="PackedScene" uid="uid://b5u3uflcushtf" path="res://Cenas/nina.tscn" id="6_x61vm"]
 [ext_resource type="PackedScene" uid="uid://c8um0fjc1dq2a" path="res://Cenas/caixa.tscn" id="7_u3e3p"]
-[ext_resource type="PackedScene" uid="uid://dt5fjj1kwhltg" path="res://Cenas/cipo.tscn" id="8_g68r4"]
+[ext_resource type="PackedScene" uid="uid://dt5fjj1kwhltg" path="res://Cenas/corda.tscn" id="8_g68r4"]
 [ext_resource type="PackedScene" uid="uid://05n7icykp8xb" path="res://Cenas/casa.tscn" id="9_qnbuu"]
-[ext_resource type="AudioStream" uid="uid://djlfmob3tkrgg" path="res://Assets/Audio/Músicas/fase3.ogg" id="10_q73nq"]
+[ext_resource type="AudioStream" uid="uid://djlfmob3tkrgg" path="res://Assets/Sons/Temas/fase3.ogg" id="10_q73nq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7rn71"]
 size = Vector2(16, 3000)

@@ -1,18 +1,19 @@
 [gd_scene format=3 uid="uid://br0kgm1m2ops5"]
 
 [ext_resource type="Script" uid="uid://bmdoarfkpceim" path="res://Scripts/telaFinal.gd" id="1_tela"]
-[ext_resource type="FontFile" uid="uid://de816ux7qepml" path="res://Assets/Fontes/Fortzilla_Font_1_14/OpenType (.otf)/Fortzilla-Regular.otf" id="2_ubyka"]
-[ext_resource type="FontFile" uid="uid://c8dy550a1p8qb" path="res://Assets/Fontes/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="3_mqopb"]
-[ext_resource type="StyleBox" uid="uid://ygb74bhmmojc" path="res://Assets/Botao/button.tres" id="4_5x21u"]
-[ext_resource type="StyleBox" uid="uid://u6misulu6jux" path="res://Assets/Botao/button_pressed_blue.tres" id="6_l3bg0"]
-[ext_resource type="StyleBox" uid="uid://dl3r386snorgg" path="res://Assets/Botao/button_hover_blue.tres" id="7_8o5i1"]
-[ext_resource type="Texture2D" uid="uid://dm6rj6bvfc67c" path="res://Assets/Outros/bg-black.png" id="7_l3bg0"]
+[ext_resource type="FontFile" uid="uid://de816ux7qepml" path="res://Assets/Fontes/fortzilla/otf/Fortzilla-Regular.otf" id="2_ubyka"]
+[ext_resource type="FontFile" uid="uid://c8dy550a1p8qb" path="res://Assets/Fontes/brackeys/fonts/PixelOperator8Bold.ttf" id="3_mqopb"]
+[ext_resource type="StyleBox" uid="uid://ygb74bhmmojc" path="res://Assets/Recursos/button.tres" id="4_5x21u"]
+[ext_resource type="StyleBox" uid="uid://u6misulu6jux" path="res://Assets/Recursos/button_pressed_blue.tres" id="6_l3bg0"]
+[ext_resource type="StyleBox" uid="uid://dl3r386snorgg" path="res://Assets/Recursos/button_hover_blue.tres" id="7_8o5i1"]
+[ext_resource type="Texture2D" uid="uid://dm6rj6bvfc67c" path="res://Assets/Outros/bd.png" id="7_l3bg0"]
 [ext_resource type="Texture2D" uid="uid://w5f3quq75uu4" path="res://Assets/Sprites/icons/hat.png" id="8_8o5i1"]
 [ext_resource type="Texture2D" uid="uid://dg8fm6y5k8g4c" path="res://Assets/Sprites/icons/nina.png" id="9_5f3o3"]
-[ext_resource type="StyleBox" uid="uid://cl11k4tp5uv2s" path="res://Assets/Botao/button_pressed_red.tres" id="9_gitn5"]
-[ext_resource type="StyleBox" uid="uid://dxfce4bjiik0l" path="res://Assets/Botao/button_hover_red.tres" id="10_8xdbm"]
+[ext_resource type="StyleBox" uid="uid://cl11k4tp5uv2s" path="res://Assets/Recursos/button_pressed_red.tres" id="9_gitn5"]
+[ext_resource type="StyleBox" uid="uid://dxfce4bjiik0l" path="res://Assets/Recursos/button_hover_red.tres" id="10_8xdbm"]
 
 [node name="TelaFinal" type="Control" unique_id=349717936 node_paths=PackedStringArray("subText")]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

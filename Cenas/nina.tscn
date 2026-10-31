@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://bd44bit6gjrtk" path="res://Scripts/carregador.gd" id="1_0ybgg"]
 [ext_resource type="Texture2D" uid="uid://bflovia1adtip" path="res://icon.svg" id="2_gxcyv"]
-[ext_resource type="Texture2D" uid="uid://4k05m2yr5rw3" path="res://Assets/Sprites/nina/nina_caixa.png" id="2_u0scl"]
-[ext_resource type="Texture2D" uid="uid://boit1pn82531d" path="res://Assets/Sprites/nina/nina_idle.png" id="3_v6olo"]
+[ext_resource type="Texture2D" uid="uid://4k05m2yr5rw3" path="res://Assets/Sprites/players/nina/nina_caixa.png" id="2_u0scl"]
+[ext_resource type="Texture2D" uid="uid://boit1pn82531d" path="res://Assets/Sprites/players/nina/nina_idle.png" id="3_v6olo"]
 [ext_resource type="Script" uid="uid://pf086pco02v2" path="res://Scripts/playerSprite.gd" id="7_jt2dp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wreb2"]

@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://0ce5s453ltth" path="res://Scripts/menu.gd" id="1_8lfl8"]
 [ext_resource type="Texture2D" uid="uid://mhrjxotp40n1" path="res://Assets/Sprites/mapa/fundo_menu.png" id="2_fundo"]
-[ext_resource type="FontFile" uid="uid://de816ux7qepml" path="res://Assets/Fontes/Fortzilla_Font_1_14/OpenType (.otf)/Fortzilla-Regular.otf" id="3_vpgfy"]
-[ext_resource type="FontFile" uid="uid://c8dy550a1p8qb" path="res://Assets/Fontes/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="4_eheat"]
-[ext_resource type="StyleBox" uid="uid://bdrxtcwco6ou" path="res://Assets/Botao/new_style_box_flat.tres" id="5_fapvr"]
-[ext_resource type="StyleBox" uid="uid://8jio1xjx2k72" path="res://Assets/Botao/new_style_box_flat2.tres" id="6_kdsmm"]
+[ext_resource type="FontFile" uid="uid://de816ux7qepml" path="res://Assets/Fontes/fortzilla/otf/Fortzilla-Regular.otf" id="3_vpgfy"]
+[ext_resource type="FontFile" uid="uid://c8dy550a1p8qb" path="res://Assets/Fontes/brackeys/fonts/PixelOperator8Bold.ttf" id="4_eheat"]
+[ext_resource type="StyleBox" uid="uid://bdrxtcwco6ou" path="res://Assets/Recursos/new_style_box_flat.tres" id="5_fapvr"]
+[ext_resource type="StyleBox" uid="uid://8jio1xjx2k72" path="res://Assets/Recursos/new_style_box_flat2.tres" id="6_kdsmm"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kdsmm"]
 bg_color = Color(0.14704712, 0.265625, 0.12572235, 1)
