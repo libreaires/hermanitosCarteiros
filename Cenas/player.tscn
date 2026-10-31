@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://2xklqicvfixs" path="res://Assets/Sprites/players/pipo/macaco_run2.png" id="5_8vhvd"]
 [ext_resource type="Texture2D" uid="uid://b87lbq2uwviik" path="res://Assets/Sprites/players/pipo/macaco carteiro8.png" id="7_4q8k4"]
 [ext_resource type="Script" uid="uid://pf086pco02v2" path="res://Scripts/playerSprite.gd" id="9_ybr15"]
-[ext_resource type="Texture2D" uid="uid://bflovia1adtip" path="res://icon.svg" id="10_4q8k4"]
+[ext_resource type="Texture2D" uid="uid://bflovia1adtip" path="res://Assets/Outros/debug.svg" id="10_4q8k4"]
 [ext_resource type="Texture2D" uid="uid://73luaxuen1wa" path="res://Assets/Sprites/players/pipo/macaco_idle.png" id="m_idle"]
 [ext_resource type="Texture2D" uid="uid://bstbk36v2o85v" path="res://Assets/Sprites/players/pipo/macaco_jump.png" id="m_jump"]
 [ext_resource type="Texture2D" uid="uid://bh1setbf8mfxt" path="res://Assets/Sprites/players/pipo/macaco_run1.png" id="m_run1"]
