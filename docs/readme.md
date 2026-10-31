@@ -2,4 +2,4 @@
 
 pq que eu fiz isso?
 
-[aqui o download do jogo do ano](https://github.com/libreaires/hermanitosCarteiros)
+[aqui o download do jogo do ano](https://github.com/libreaires/hermanitosCarteiros/releases)
