@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c8um0fjc1dq2a"]
+
+[ext_resource type="Script" uid="uid://mkai52tlfu4o" path="res://scripts/elementos/caixa.gd" id="1_caixa"]
+[ext_resource type="Texture2D" uid="uid://ddv4e2iud5fou" path="res://assets/sprites/mapa/caixa_pequena.png" id="2_iclr6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_caixa"]
+size = Vector2(47, 46)
+
+[node name="Caixa" type="RigidBody2D" unique_id=2046081679]
+z_index = 2
+collision_layer = 65
+collision_mask = 18
+gravity_scale = 0.5
+lock_rotation = true
+script = ExtResource("1_caixa")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1630400138]
+texture = ExtResource("2_iclr6")
+offset = Vector2(0, -32)
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=1904976863]
+position = Vector2(0, -23)
+shape = SubResource("RectangleShape2D_caixa")
+
+[node name="Area" type="Area2D" parent="." unique_id=861614132]
+collision_layer = 65
+
+[node name="Collision" type="CollisionShape2D" parent="Area" unique_id=499012063]
+position = Vector2(0, -23)
+shape = SubResource("RectangleShape2D_caixa")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
